@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JSON Parser and Reader App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <textarea name="jsonInput" id="" cols="30" rows="10"></textarea>
-        <div class="buttons">
-            <button onclick="parseAndDisplayJson()">Parse & Display Your JSON File Data</button>
-            <input type="file" id="fileInput" accept=".json, .txt">
-        </div>
+    <textarea name="jsonInput" id="" cols="30" rows="10"></textarea>
+    <div class="buttons">
+        <button onclick="parseAndDisplayJson()">Parse & Display Your JSON File Data</button>
+        <input type="file" id="fileInput" accept=".json, .txt">
     </div>
     <div class="jsonViewer"></div>
     <script src="script.js"></script>
