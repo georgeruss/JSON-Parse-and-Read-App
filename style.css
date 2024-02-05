@@ -1,0 +1,24 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    height: 100vh;
+}
+
+.textarea{
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+    overflow: scroll;
+}
+
