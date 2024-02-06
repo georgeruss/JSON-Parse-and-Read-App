@@ -15,6 +15,7 @@ function buildTree(obj, parentElement, key) {
 
     if(typeof obj === 'object' && obj !== null) {
         const keySpan = document.createElement('span');
+        keySpan.className = 'key collapsible';
         keySpan.textContent = key + ': ';
         item.appendChild(keySpan);
 
@@ -34,11 +35,11 @@ function buildTree(obj, parentElement, key) {
                 this.classList.remove('collapsed');
             } else {
                 childDiv.style.display = 'block';
-                this.classList.remove('collapsed');
+                this.classList.add('collapsed');
             }
-        }
+        };
     } else {
-        item.innerHTML = '<span class="key">' + key + ': ' + '</span>' + '<span class="' + getType(obj) + '">' + obj + '</span>';
+        item.innerHTML = '<span class="key">' + key + ': </span>' + '<span class="' + getType(obj) + '">' + obj + '</span>';
     } // if
 } // buildTree
 
