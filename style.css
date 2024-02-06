@@ -110,6 +110,22 @@ input[type=file]::file-selector-button:hover{
     font-weight: bold;
 }
 
-#jsonInputs {
-    
+.string {
+    color: #22863a;
+}
+
+.number {
+    color: #032f62;
+}
+
+.object {
+    margin-left: 15px;
+}
+
+.array {
+    margin-left: 15px;
+}
+
+.unknown {
+    color: red;
 }
