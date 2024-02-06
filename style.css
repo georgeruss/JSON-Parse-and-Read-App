@@ -68,3 +68,35 @@ input[type=file]::file-selector-button:hover{
     align-items: center;
     display: inline;
 }
+
+#jsonViewer {
+    width: 500px;
+    height: 400px;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    overflow: scroll;
+    font-size: 14px;
+}
+
+.collapsible {
+    cursor: pointer;
+    position: relative;
+    padding-left: 20px;
+}
+
+.collapsible::before {
+    content:'→';
+    color: #555;
+    position:absolute;
+    left: 0;
+    top: 0;
+    font-size: 14px;
+    line-height: 1;
+    padding-right: 5px;
+}
+
+.collapsible.collapsed::before {
+    content: '↓';
+}
