@@ -100,3 +100,16 @@ input[type=file]::file-selector-button:hover{
 .collapsible.collapsed::before {
     content: '↓';
 }
+
+.hidden {
+    display: none;
+}
+
+.key {
+    color: #e1be32;
+    font-weight: bold;
+}
+
+#jsonInputs {
+    
+}

@@ -3,7 +3,7 @@ function parseAndDisplayJson() {
     try {
         const jsonObj = JSON.parse(jsonInput);
         document.getElementById('jsonViewer').innerHTML = '';
-        buildTree(jsonObj, document.getElementById('jsonViewer'), root);
+        buildTree(jsonObj, document.getElementById('jsonViewer'), 'root');
     } catch(e) {
         document.getElementById('jsonViewer').innerHTML = '<p style="color: red;">JSON data cannot be read.</p>';
     }
