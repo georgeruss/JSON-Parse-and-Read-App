@@ -3,7 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+h3 {
+    font-size: 1.4rem;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+    padding-bottom: 0.3em;
 }
 
 body {
@@ -11,6 +20,7 @@ body {
     align-items: center;
     gap: 2em;
     height: 100vh;
+    background-color: rgb(227, 214, 180);
 }
 
 .textarea{
@@ -26,13 +36,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 10px;
 }
 
 button, 
 input[type=file]::file-selector-button{
     background-color: #e1be32;
     box-shadow: 0px 0px 1px black;
-    color: black;
+    color: rgb(49, 49, 49);
     border: none;
     padding: 8px 14px;
     cursor: pointer;
@@ -46,3 +57,14 @@ input[type=file]::file-selector-button:hover{
     text-decoration: underline;
 }
 
+.container {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    display: inline;
+}
